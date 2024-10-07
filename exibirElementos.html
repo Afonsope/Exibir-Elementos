@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exibir Elementos</title>
+</head>
+
+<body>
+    <button id="meuBotao">Exibir/Ocultar Elementos</button>
+    <p id="meuTexto" style="display: none;">Este é o texto oculto</p>
+
+    <script>
+        //Obter uma referência do botão
+        const botao = document.getElementById("meuBotao")
+        const texto = document.getElementById("meuTexto")
+
+        // Adiciona um observador JavaScript para aguardar um click
+        botao.addEventListener("click", function () {
+            // Dentro da função verifica o estilo
+            if (texto.style.display == "none")
+            {
+                texto.style.display = "block"
+            }
+            
+            else
+            {
+                texto.style.display = "none"
+            }
+        })
+
+    </script>
+</body>
+
+</html>
